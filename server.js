@@ -1,9 +1,9 @@
 const http = require('http');
 
 http.createServer((req, res)=>{
-    var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-    var parseString = require('xml2js').parseString;
-    var resHtml = '';
+    let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+    let parseString = require('xml2js').parseString;
+    let resHtml = '';
     let xhr = new XMLHttpRequest();
     let url = 'https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en';
     xhr.open('GET',url,false);
